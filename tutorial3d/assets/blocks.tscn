@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3m5scekyqe7u"]
+
+[ext_resource type="PackedScene" uid="uid://cneyapqk3flkb" path="res://imports/block.gltf" id="1_alfvt"]
+[ext_resource type="ArrayMesh" uid="uid://bh4f451c7i7f3" path="res://meshes/blue-mesh.tres" id="2_4el4y"]
+[ext_resource type="ArrayMesh" uid="uid://7o182u7dtvhq" path="res://meshes/purple-mesh.tres" id="3_5nqkg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lon4d"]
+
+[node name="block" instance=ExtResource("1_alfvt")]
+
+[node name="Cube" parent="." index="0"]
+mesh = ExtResource("2_4el4y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube/StaticBody3D" index="0"]
+shape = SubResource("BoxShape3D_lon4d")
+
+[node name="Cube2" type="MeshInstance3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.38216)
+mesh = ExtResource("3_5nqkg")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube2/StaticBody3D" index="0"]
+shape = SubResource("BoxShape3D_lon4d")

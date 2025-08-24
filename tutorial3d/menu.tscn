@@ -1,0 +1,198 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbx1cpy3ewgrl"]
+
+[ext_resource type="Script" uid="uid://18yys1qbdjte" path="res://scripts/menu.gd" id="1_4hy44"]
+[ext_resource type="FontFile" uid="uid://vy6ykr6orjal" path="res://fonts/ThatNogoFontCasual.ttf" id="1_ouk20"]
+[ext_resource type="FontFile" uid="uid://bf2rhe6e2p1xn" path="res://fonts/Redkost Comic.otf" id="2_mae5d"]
+[ext_resource type="Script" uid="uid://crxf3wg7kxtup" path="res://scripts/button_title_play.gd" id="3_mae5d"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4hy44")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.070682, 3.1285e-06, 0.36615, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 250.0
+grow_horizontal = 2
+rotation = 0.0872665
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.431373, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("1_ouk20")
+theme_override_font_sizes/font_size = 150
+text = "Simple 3D game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="button-title-play" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -135.0
+offset_top = -59.5
+offset_right = 135.0
+offset_bottom = 59.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_pressed_color = Color(0, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.687512, 0.000397079, 0.697327, 1)
+theme_override_colors/font_color = Color(1, 0.431373, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_mae5d")
+theme_override_font_sizes/font_size = 72
+text = "Play!"
+flat = true
+script = ExtResource("3_mae5d")
+
+[node name="StarHolder" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Star1" type="Label" parent="StarHolder"]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 209.0
+offset_right = 178.0
+offset_bottom = 299.0
+pivot_offset = Vector2(45, 45)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 62
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Star2" type="Label" parent="StarHolder"]
+layout_mode = 0
+offset_left = 1138.0
+offset_top = 248.0
+offset_right = 1228.0
+offset_bottom = 338.0
+rotation = 0.785398
+pivot_offset = Vector2(45, 45)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 62
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Star3" type="Label" parent="StarHolder"]
+layout_mode = 0
+offset_left = 1084.0
+offset_top = 496.0
+offset_right = 1174.0
+offset_bottom = 586.0
+pivot_offset = Vector2(45, 45)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 62
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Star4" type="Label" parent="StarHolder"]
+layout_mode = 0
+offset_left = 985.0
+offset_top = 323.0
+offset_right = 1075.0
+offset_bottom = 413.0
+pivot_offset = Vector2(45, 45)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 62
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Star5" type="Label" parent="StarHolder"]
+layout_mode = 0
+offset_left = 489.0
+offset_top = 480.0
+offset_right = 579.0
+offset_bottom = 570.0
+rotation = 0.785398
+pivot_offset = Vector2(45, 45)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 62
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Star6" type="Label" parent="StarHolder"]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 464.0
+offset_right = 147.0
+offset_bottom = 554.0
+pivot_offset = Vector2(45, 45)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 62
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Star7" type="Label" parent="StarHolder"]
+layout_mode = 0
+offset_left = 241.0
+offset_top = 338.0
+offset_right = 331.0
+offset_bottom = 428.0
+rotation = 0.785398
+pivot_offset = Vector2(45, 45)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 62
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Star8" type="Label" parent="StarHolder"]
+layout_mode = 0
+offset_left = 883.0
+offset_top = 451.0
+offset_right = 973.0
+offset_bottom = 541.0
+rotation = 0.785398
+pivot_offset = Vector2(45, 45)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 62
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Star9" type="Label" parent="StarHolder"]
+layout_mode = 0
+offset_left = 674.0
+offset_top = 573.0
+offset_right = 764.0
+offset_bottom = 663.0
+pivot_offset = Vector2(45, 45)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 62
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="pressed" from="button-title-play" to="button-title-play" method="_on_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
